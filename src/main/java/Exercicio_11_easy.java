@@ -12,7 +12,7 @@ public class Exercicio_11_easy {
             numeroDigitado = numeroDigitado + 2;
 
             System.out.println(numeroDigitado);
-i++; //tested
+i++;
         }
     }
 }
