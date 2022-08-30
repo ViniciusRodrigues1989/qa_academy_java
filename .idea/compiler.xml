@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="exercicios_qaacademy" />
+        <module name="qa_academy_java" />
       </profile>
     </annotationProcessing>
   </component>
