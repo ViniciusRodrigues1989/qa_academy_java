@@ -9,15 +9,18 @@ public class Exercicio01MetodosComRetorno {
     public static int segundoMetodo(){
         return 10;
     }
-    public static boolean terceiroMetodo(){
-        return false;
+
+    public static boolean terceiroMetodo() {
+        return true;
     }
     public static double quartoMetodo(){
-        return 5.5;
+        return 10.8;
     }
-    public static boolean quintoMetodo(){
-        return false;
+    public static String quintoMetodo(){
+        String message = "Mais um exercicio aprendido!";
+        return message;
     }
+
 
     public static void main (String[] args) {
         System.out.println(primeiroMetodo());
