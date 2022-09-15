@@ -3,26 +3,26 @@ package easy;
 import javax.swing.*;
 
 public class Exercicio_06_easy {
-    public static void main(String[] args) {
-
-     double primeiraNota, segundaNota, mediaNotas;
-        primeiraNota = Double.parseDouble(JOptionPane.showInputDialog("Digite Primeira Nota:"));
-        segundaNota = Double.parseDouble(JOptionPane.showInputDialog("Digite Segunda Nota"));
+    public String varificaAprovacao(double primeiraNota,double segundaNota) {
+        double mediaNotas;
         mediaNotas = (primeiraNota + segundaNota) / 2;
 
-      if(mediaNotas > 5) {
-          System.out.println("O aluno está APROVADO");
+        if (mediaNotas > 5) {
+            return ("O aluno está APROVADO");
         }
 
-        if(mediaNotas < 5) {
-            System.out.println("O aluno está REPROVADO");
+        if (mediaNotas < 5) {
+            return ("O aluno está REPROVADO");
         }
 
-        if (mediaNotas == 5){
-            System.out.println("O aluno está de EXAME");
+        if (mediaNotas == 5) {
+            return ("O aluno está de EXAME");
         }
+
+        return null;
     }
 }
+
 
 
 //Inicio do algoritmo

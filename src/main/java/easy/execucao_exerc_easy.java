@@ -50,5 +50,28 @@ public class execucao_exerc_easy {
             System.out.println("A multiplicação dos valores é " + mult);
             System.out.println("A media dos valores é " + media);
         }
+
+        if(selecionaExercicio == 6 ){
+            Exercicio_06_easy ex06_easy = new Exercicio_06_easy();
+        double primeiraNota = 4;
+        double segundaNota = 4;
+        System.out.println(ex06_easy.varificaAprovacao(primeiraNota,segundaNota));
+        }
+
+        if(selecionaExercicio == 7 ){
+            Exercicio_07_easy ex07_easy = new Exercicio_07_easy();
+            double salario = 1044;
+            double calculoInss = ex07_easy.calculaInss(salario);
+            System.out.println("O valor a ser pago de INSS é de R$: " +calculoInss);
+        }
+
+        if (selecionaExercicio == 8 ){
+        Exercicio_08_easy ex08_easy = new Exercicio_08_easy();
+        double salario = 3000.00;
+        double impostoRenda = ex08_easy.calculaImpostoRenda(salario);
+        double salarioLiquido = ex08_easy.calculaSalarioLiquido(salario,impostoRenda);
+               System.out.println("O valor do Imposto de renda é R$" + impostoRenda);
+            System.out.println("O valor do Salário liquido é de R$" + salarioLiquido );
+        }
     }
 }

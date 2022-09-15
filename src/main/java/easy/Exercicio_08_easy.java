@@ -3,34 +3,44 @@ package easy;
 import javax.swing.*;
 
 public class Exercicio_08_easy {
-    static double salario, salarioLiquido, impostoRenda;
-    public static void main(String[] args) {
 
+    public double calculaImpostoRenda(double salario) {
+        double impostoRenda = 0;
 
-        salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o Salário para calculo:"));
+        // salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o Salário para calculo:"));
 
         if (salario > 0 && salario <= 1903.98) {
             impostoRenda = 0;
-            salarioLiquido = salario - impostoRenda;
         }
+
+
         if (salario >= 1903.99 && salario <= 2826.65) {
             impostoRenda = (salario * 0.075) - 142.79;
-            salarioLiquido = salario - impostoRenda;
         }
+
+
         if (salario >= 2826.66 && salario <= 3751.05) {
             impostoRenda = (salario * 0.15) - 354.80;
-            salarioLiquido = salario - impostoRenda;
         }
+
         if (salario >= 3751.06 && salario <= 4664.68) {
             impostoRenda = (salario * 0.225) - 636.13;
-            salarioLiquido = salario - impostoRenda;
         }
+
         if (salario >= 4664.69) {
             impostoRenda = (salario * 0.275) - 869.36;
-            salarioLiquido = salario - impostoRenda;
+        }
+        return impostoRenda;
+    }
+
+        public double calculaSalarioLiquido(double salario, double impostoRenda){
+           return  salario - impostoRenda;
+
+             }
+
         }
 
-            System.out.println("Seu Salário BRUTO será de R$:" + salario + " \n O Salário Liquido será de:" + salarioLiquido + "\n O valor devido de Imposto de Renda será de:" + impostoRenda);
 
-    }
-}
+// System.out.println("Seu Salário BRUTO será de R$:" + salario + " \n O Salário Liquido será de:" + salarioLiquido + "\n O valor devido de Imposto de Renda será de:" + impostoRenda);
+
+
