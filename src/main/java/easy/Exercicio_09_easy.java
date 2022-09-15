@@ -3,19 +3,20 @@ package easy;
 import javax.swing.*;
 
 public class Exercicio_09_easy {
-    static double numeroDigitado,i=1, resultado;
-    public static void main(String[] args) {
+
+    public void calculaTabuada (int numeroDigitado) {
+
+        int i = 1, resultado =0;
 
 
+        // numeroDigitado = Double.parseDouble(JOptionPane.showInputDialog("Informe um número:"));
 
-        numeroDigitado = Double.parseDouble(JOptionPane.showInputDialog("Informe um número:"));
+        while (i <= 10) {
+            resultado = numeroDigitado * i;
 
+         System.out.println(numeroDigitado + "x" + i + "=" + resultado);
+            i++;
 
-        while (i <= 10){
-        resultado = numeroDigitado *i;
-
-            System.out.println(numeroDigitado + "x" + i + "=" + resultado);
-i++;
             }
-                }
-                    }
+        }
+    }

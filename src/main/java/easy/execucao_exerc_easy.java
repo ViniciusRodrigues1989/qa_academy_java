@@ -1,6 +1,7 @@
 package easy;
 
 import javax.swing.*;
+import java.text.DecimalFormat;
 
 public class execucao_exerc_easy {
 
@@ -73,5 +74,21 @@ public class execucao_exerc_easy {
                System.out.println("O valor do Imposto de renda é R$" + impostoRenda);
             System.out.println("O valor do Salário liquido é de R$" + salarioLiquido );
         }
+        if (selecionaExercicio == 9){
+        int numeroDigitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero de 1 a 10:"));
+            Exercicio_09_easy ex09_easy = new Exercicio_09_easy();
+            ex09_easy.calculaTabuada(numeroDigitado);
+        }
+
+        if (selecionaExercicio == 10){
+            double valorInvestimento = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor investido: "));
+            DecimalFormat df = new DecimalFormat("##,###.##");
+            Exercicio_10_1_easy ex10_easy = new Exercicio_10_1_easy();
+            double valorJuros = ex10_easy.calculaJuros(valorInvestimento);
+            String valorTotal = df.format(ex10_easy.totalComJuros(valorJuros, valorInvestimento));
+            System.out.println("Valor investido: R$" + valorInvestimento + "\n" + "Valor juros: " + df.format(valorJuros));
+            System.out.println("Valor total com juros: R$" + valorTotal);
+            }
+        }
     }
-}
+
