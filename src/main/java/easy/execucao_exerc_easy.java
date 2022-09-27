@@ -89,6 +89,16 @@ public class execucao_exerc_easy {
             System.out.println("Valor investido: R$" + valorInvestimento + "\n" + "Valor juros: " + df.format(valorJuros));
             System.out.println("Valor total com juros: R$" + valorTotal);
             }
+        if (selecionaExercicio == 11){
+            int numeroDigitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro: "));
+            Exercicio_11_easy ex11_easy = new Exercicio_11_easy();
+            System.out.println("O total somado é: " + ex11_easy.somaAlgoritmo(numeroDigitado));
+        }
+        else {
+            System.out.println("Esse exercicio ainda não existe");
+
+            
+            }
         }
     }
 
